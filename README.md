@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD026 MD031 MD033 MD036 MD041 -->
+<!-- markdownlint-disable MD026 MD031 MD033 MD036 MD041 MD047 -->
 
 <div align="center">
 
@@ -38,7 +38,9 @@ _✨ ~~雪豹闭嘴~~ ✨_
 
 ## 使用
 
-在群里艾特机器人+`雪豹闭嘴` ,即可使机器人暂时屏蔽群内主动响应
+在群里艾特机器人+`雪豹闭嘴` ,即可使机器人暂时屏蔽群内主动响应，任意适配器都可以使用。
+
+**仅限主动信息响应屏蔽，如果是其他插件的主动信息功能是无法屏蔽的，例如定时任务**
 
 ## 💿 安装
 
@@ -113,6 +115,13 @@ plugins = [
 |  `shutup_name`  |  否  |   []   | List[str] |  需要名称，例如`xx闭嘴`        |
 | `shutup_time`  |  否  | `10` | int | 闭嘴时间，单位分钟 |
 | `shutup_permission` |  否  | List[str] | `["超管"]`  |    默认只有超管能使用闭嘴指令，如果需要所有人都能使用，设置为空列表[]    |
+
+## 不建议
+
+不建议和以下插件混用,因为功能重复
+
+- [指令阻断](https://github.com/KarisAya/nonebot_plugin_matcher_block)
+- [黑名单](https://github.com/MerCuJerry/nonebot-plugin-blocker)
 
 ## 其他
 

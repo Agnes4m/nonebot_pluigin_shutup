@@ -23,7 +23,7 @@ readme = "README.md"
 license = { text = "MIT" }
 
 [project.urls]
-homepage = "https://github.com/Agnes4m/nonebot_plugin_shutup"
+homepage = "https://github.com/Agnes4m/nonebot_pluigin_shutup"
 
 [tool.pdm.build]
 includes = []
