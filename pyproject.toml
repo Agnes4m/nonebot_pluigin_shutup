@@ -1,16 +1,15 @@
 [project]
-name = "nonebot-plugin-pjsk"
-version = "0.2.8"
-description = "Project Sekai Sticker Creator for NoneBot2."
+name = "nonebot-plugin-shutup"
+version = "0.0.1"
+description = "基于 NoneBot2 的 插件，用于机器人当前会话闭嘴"
 authors = [
-    { name = "Agnes_Digital", email = "Z735803792@163.com" },
-    { name = "student_2333", email = "lgc2333@126.com" },
+    { name = "Agnes_Digital", email = "Z735803792@163.com" }
 ]
 dependencies = [
     "nonebot2>=2.0.0",
 ]
-requires-python = ">=3.9,<4.0"
-keywords = ["pjsk", "nonebot2", "plugin"]
+requires-python = ">=3.8,<4.0"
+keywords = ["nonebot2", "plugin"]
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
@@ -24,7 +23,7 @@ readme = "README.md"
 license = { text = "MIT" }
 
 [project.urls]
-homepage = "https://github.com/Agnes4m/nonebot_plugin_pjsk"
+homepage = "https://github.com/Agnes4m/nonebot_plugin_shutup"
 
 [tool.pdm.build]
 includes = []

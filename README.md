@@ -103,9 +103,20 @@ plugins = [
 
 </details>
 
+## ⚙️ 配置
+
+插件开箱即用，所有配置项皆为可选。请**按需添加**下面的配置项到 `.env` 文件中
+
+|        配置项        | 必填 | 默认值  |     类型  |                                                  说明                                                              |
+| :------------------: | :--: | :-----: |  :-------: | :---------------------------: |
+| `shutup_tome` |  否  |   True   | bool |    是否需要艾特,设置为`False`则无需艾特   |
+|  `shutup_name`  |  否  |   []   | List[str] |  需要名称，例如`xx闭嘴`        |
+| `shutup_time`  |  否  | `10` | int | 闭嘴时间，单位分钟 |
+| `shutup_permission` |  否  | List[str] | `["超管"]`  |    默认只有超管能使用闭嘴指令，如果需要所有人都能使用，设置为空列表[]    |
+
 ## 其他
 
-- [支付宝-蚂蚁森林-保护雪豹(手机打开)](https://render.alipay.com/p/s/i/?scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FappId%3D60000002%26url%3Dhttps%253A%252F%252Frender.alipay.com%252Fp%252Fyuyan%252F180020380000000248%252Fforest_home.html%253FcaprMode%253Dsync%2526forestId%253D4700082%26pullRefresh%3DNO%26canPullDown%3DNO%26backgroundColor%3D1381653%26transparentTitle%3Dauto%26source%3Dfxshexiangtoubaohudi%26fxzjshareChinfo%3Dch_share__chsub_CopyLink%26chInfo%3Dch_share__chsub_CopyLink%26apshareid%3D85c04233-69a5-4394-bd57-8d1c67a240f0%26shareBizType%3DztokenV0_kMglUpIE)
-![xuebao1](./img/xuebao1) ![xuebao2](./img/xuebao2)
 - ~~[丁真同款电子烟](http://dian-zi-yan.com/index-cn.html)~~
 - [爱发电](https://afdian.net/a/agnes_digital)
+- [支付宝-蚂蚁森林-保护雪豹(手机打开)](https://render.alipay.com/p/s/i/?scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FappId%3D60000002%26url%3Dhttps%253A%252F%252Frender.alipay.com%252Fp%252Fyuyan%252F180020380000000248%252Fforest_home.html%253FcaprMode%253Dsync%2526forestId%253D4700082%26pullRefresh%3DNO%26canPullDown%3DNO%26backgroundColor%3D1381653%26transparentTitle%3Dauto%26source%3Dfxshexiangtoubaohudi%26fxzjshareChinfo%3Dch_share__chsub_CopyLink%26chInfo%3Dch_share__chsub_CopyLink%26apshareid%3D85c04233-69a5-4394-bd57-8d1c67a240f0%26shareBizType%3DztokenV0_kMglUpIE) 以下是作者保护雪豹的截图
+![xuebao1](./img/xuebao1.jpg) ![xuebao2](./img/xuebao2.jpg)
