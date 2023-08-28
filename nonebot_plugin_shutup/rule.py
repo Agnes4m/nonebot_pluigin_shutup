@@ -4,23 +4,22 @@ from nonebot import get_driver
 from nonebot.adapters import Event
 from nonebot.rule import to_me
 from nonebot.typing import T_State
-
+from nonebot.log import logger
 from .config import config
 
 
 async def shut_up_permission(event: Event):
     if config.shutup_tome:
         return to_me()
-    print("是否艾特自己", event.is_tome())
     if config.shutup_permission and "超管" in config.shutup_permission:
         if event.get_user_id() in get_driver().config.superusers:
-            print("超管允许")
             a = True
         else:
             a = False
     else:
         a = False
-    print(a)
+    if a:
+        logger.info("检测到禁言指令")
     return a
 
 
