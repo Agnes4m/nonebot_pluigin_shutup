@@ -2,9 +2,10 @@ from datetime import datetime, timedelta
 
 from nonebot import get_driver
 from nonebot.adapters import Event
+from nonebot.log import logger
 from nonebot.rule import to_me
 from nonebot.typing import T_State
-from nonebot.log import logger
+
 from .config import config
 
 
@@ -12,10 +13,7 @@ async def shut_up_permission(event: Event):
     if config.shutup_tome:
         return to_me()
     if config.shutup_permission and "超管" in config.shutup_permission:
-        if event.get_user_id() in get_driver().config.superusers:
-            a = True
-        else:
-            a = False
+        a = event.get_user_id() in get_driver().config.superusers
     else:
         a = False
     if a:
