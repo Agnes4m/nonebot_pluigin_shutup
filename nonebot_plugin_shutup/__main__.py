@@ -10,7 +10,9 @@ from nonebot.typing import T_State
 from .config import config
 from .rule import shut_up_permission, shut_up_rule
 
-shut_up = on_endswith(("闭嘴", "shut up"), rule=shut_up_permission, priority=0, block=True)
+shut_up = on_endswith(
+    ("闭嘴", "shut up"), rule=shut_up_permission, priority=0, block=True
+)
 shut_up_event = on_message(rule=shut_up_rule)
 not_shut_up = on_endswith("说话", permission=SUPERUSER, priority=0, block=True)
 
