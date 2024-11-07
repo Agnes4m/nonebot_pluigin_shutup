@@ -1,12 +1,12 @@
 [project]
 name = "nonebot-plugin-shutup"
-version = "0.0.3"
+version = "0.1.0"
 description = "基于 NoneBot2 的 插件，用于机器人当前会话闭嘴"
 authors = [
     { name = "Agnes_Digital", email = "Z735803792@163.com" }
 ]
 dependencies = [
-    "nonebot2>=2.0.0",
+    "nonebot2>=2.2.0",
 ]
 requires-python = ">=3.8,<4.0"
 keywords = ["nonebot2", "plugin"]
@@ -17,6 +17,7 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Operating System :: OS Independent",
 ]
 readme = "README.md"
